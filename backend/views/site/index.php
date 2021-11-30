@@ -18,29 +18,21 @@ $this->title = 'RANES ENTERPRISE';
 
         <div class="row">
             
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <h2>> Lands On Sale</h2>
 
-                <p>We have various lands and plots on sale at affordable prices. Some are within Kitale town municipality while others are in the outskirts of the town.</p>
+                <p>Create / Delete / Update / View</p>
 
-                <p><a class="btn btn-outline-secondary" href="<?= \yii\helpers\Url::to(['/lands/index']) ?>">View Lands/Plots on Sale &raquo;</a></p>
+                <p><a class="btn btn-outline-secondary" href="<?= \yii\helpers\Url::to(['/lands/index']) ?>">Click to perform operation &raquo;</a></p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-6">
                 <h2>> Real Estate</h2>
 
-                <p>Properties For Sale</p>
+                <p>Create / Delete / Update / View Properties For Sale</p>
 
-                <p><a class="btn btn-outline-secondary" href="<?= \yii\helpers\Url::to(['/realestate/index']) ?>">Click to learn more &raquo;</a></p>
+                <p><a class="btn btn-outline-secondary" href="<?= \yii\helpers\Url::to(['/property/index']) ?>">Click to perform operation &raquo;</a></p>
             </div>
             
-            <div class="col-lg-4">
-                <h2>> ICT</h2>
-
-                <p>We have a dedicated IT team offering advanced technological solutions.</p>
-
-                <p><a class="btn btn-outline-secondary" href="<?= \yii\helpers\Url::to(['/site/ict']) ?>">Learn More &raquo;</a></p>
-            </div>
         </div>
-
     </div>
 </div>

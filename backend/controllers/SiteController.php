@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use app\models\Lands;
 use common\models\AdminLoginForm;
 use Yii;
 use yii\filters\VerbFilter;
@@ -70,7 +71,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $this->layout = 'dashboardLayout';
+
+        $lands = Lands::find()->andFilterWhere(['land_id'=>$land_id]);
+
+        return $this->render('index',['lands' => $lands]);
     }
 
     /**

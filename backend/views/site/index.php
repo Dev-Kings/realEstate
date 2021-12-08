@@ -32,6 +32,33 @@ $this->title = 'RANES ENTERPRISE';
 
                 <p><a class="btn btn-outline-secondary" href="<?= \yii\helpers\Url::to(['/property/index']) ?>">Click to perform operation &raquo;</a></p>
             </div>
+            <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-success">
+              <div class="inner">
+              <h3>
+              <?php 
+              //echo $lands;
+              //echo $property;
+              //echo $admin
+              ?>
+              </h3>
+                <p>Total Lands For Sale</p>
+              </div>
+              <div class="icon">
+                <i class="nav-icon fas fa-home"></i>
+              </div>
+              <a href="<?= \yii\helpers\Url::to(['/property/index']) ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+            <?php
+            $this->params['lands'] = $lands;
+            $this->params['admin'] = $admin;
+            $this->params['property'] = $property;
+            ?>
+          </div>
+          <?php //} ?>
+          <!-- ./col -->
+          <div class="col-lg-3 col-6">
             
         </div>
     </div>

@@ -3,7 +3,10 @@
 /* @var $this \yii\web\View */
 /* @var $content string */
 
+use app\models\Lands;
+use yii\web\Controller;
 use backend\assets\DashboardAsset;
+use backend\controllers\SiteController;
 use common\widgets\Alert;
 use yii\bootstrap4\Breadcrumbs;
 use yii\bootstrap4\Html;
@@ -170,8 +173,13 @@ $baseUrl = $asset->baseUrl;
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3>150</h3>
-
+                <h3>
+                <?php
+                if(isset($this->params['lands'])){
+                  echo $this->params['lands'];
+                }
+                ?>
+                </h3>
                 <p>Total Lands For Sale</p>
               </div>
               <div class="icon">
@@ -185,11 +193,14 @@ $baseUrl = $asset->baseUrl;
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                  <?php foreach($lands as $land) { ?>
-                <h3>5</h3>
-
+              <h3>
+                <?php
+                if(isset($this->params['property'])){
+                  echo $this->params['property'];
+                }
+                ?>
+                </h3>
                 <p>Total Properties For Sale</p>
-                <? } ?>
               </div>
               <div class="icon">
                 <i class="nav-icon fas fa-home"></i>
@@ -202,7 +213,13 @@ $baseUrl = $asset->baseUrl;
             <!-- small box -->
             <div class="small-box bg-warning">
               <div class="inner">
-                <h3>2</h3>
+                <h3>
+                <?php
+                if(isset($this->params['admin'])){
+                  echo $this->params['admin'];
+                }
+                ?>
+                </h3>
 
                 <p>System Users</p>
               </div>
@@ -217,7 +234,7 @@ $baseUrl = $asset->baseUrl;
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>65</h3>
+                <h3>Keep Calm</h3>
 
                 <p>Unique Visitors</p>
               </div>

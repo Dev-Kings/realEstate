@@ -3,6 +3,8 @@
 namespace backend\controllers;
 
 use app\models\Lands;
+use app\models\Admin;
+use app\models\Property;
 use common\models\AdminLoginForm;
 use Yii;
 use yii\filters\VerbFilter;
@@ -23,6 +25,9 @@ use frontend\models\ContactForm;
  */
 class SiteController extends Controller
 {
+    public $lands;
+    public $admin;
+    public $property;
     /**
      * {@inheritdoc}
      */
@@ -73,9 +78,18 @@ class SiteController extends Controller
     {
         $this->layout = 'dashboardLayout';
 
-        $lands = Lands::find()->andFilterWhere(['land_id'=>$land_id]);
+        //count lands in db
+        $lands = Lands::find()->count();
+        //return $this->render('index',['lands'=>$lands]);
 
-        return $this->render('index',['lands' => $lands]);
+        //count properties in db
+        $property = Property::find()->count();
+        //return $this->render('index',['property'=>$property]);
+
+        //count admins in db
+        $admin = Admin::find()->count();
+
+        return $this->render('index',['admin'=>$admin,'lands'=>$lands,'property'=>$property]);
     }
 
     /**

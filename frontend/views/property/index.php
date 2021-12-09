@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'property_description',
             'property_price',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            //['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
 

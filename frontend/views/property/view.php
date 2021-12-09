@@ -35,8 +35,8 @@ $this->params['breadcrumbs'][] = $this->title;
             'property_price',
              [
                  'attribute' => 'picture',
-                 //'value' => Yii::getAlias('@web').'/'.$model->picture, ['alt'=>'some', 'class'=>'thing', 'height'=>'1000px', 'width'=>'1000px'], ['site/zoom'],
-                 'value' => Yii::getAlias('/../advanced/backend/web').'/'.$model->picture, ['alt'=>'some', 'class'=>'thing', 'height'=>'1000px', 'width'=>'1000px'], ['site/zoom'],
+                 'value' => Yii::getAlias('@web').'/'.$model->picture, ['alt'=>'some', 'class'=>'thing', 'height'=>'1000px', 'width'=>'1000px'], ['site/zoom'],
+                 //'value' => Yii::getAlias('/../advanced/backend/web').'/'.$model->picture, ['alt'=>'some', 'class'=>'thing', 'height'=>'1000px', 'width'=>'1000px'], ['site/zoom'],
                  'format' => ['image',['width'=>'700','height'=>'500']]
              ]
         ],

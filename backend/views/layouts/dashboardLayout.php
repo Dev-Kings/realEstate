@@ -234,7 +234,7 @@ $baseUrl = $asset->baseUrl;
             <!-- small box -->
             <div class="small-box bg-danger">
               <div class="inner">
-                <h3>Keep Calm</h3>
+                <h3>Soon</h3>
 
                 <p>Unique Visitors</p>
               </div>

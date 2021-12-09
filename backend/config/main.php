@@ -12,6 +12,7 @@ return [
         '@npm'   => '@vendor/npm-asset',
     ],
     'id' => 'app-backend',
+    'name'=>'Ranes Enterprise',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => ['log'],

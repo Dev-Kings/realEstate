@@ -50,6 +50,7 @@ class PropertyController extends Controller
      */
     public function actionIndex()
     {
+        
         $searchModel = new PropertySearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
@@ -57,6 +58,9 @@ class PropertyController extends Controller
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
         ]);
+        
+
+        //$property = Property::find()->where(['admin'])
     }
 
     /**

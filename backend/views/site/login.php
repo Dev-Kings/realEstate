@@ -33,6 +33,8 @@ $this->title = 'Login';
                 <?= Html::submitButton('Login', ['class' => 'btn btn-primary btn-block', 'name' => 'login-button']) ?>
             </div>
 
+            <p class="float-right"><a href="<?= Yii::$app->urlManagerFrontend->createUrl(['']) ?>">Ranes Homepage &raquo;</a></p>
+
         <?php ActiveForm::end(); ?>
     </div>
 </div>

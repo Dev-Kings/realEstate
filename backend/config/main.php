@@ -23,10 +23,12 @@ return [
             'cookieValidationKey' => '[ZFTlsTPUjbuGRXkSxTxH]',
             'csrfParam' => '_csrf-backend',
         ],
-        // 'urlManagerFrontend' => [
-        //     'class' => 'yii\web\urlManager',
-        //     'baseUrl' => 'frontend/web/', //Access frontend web url
-        // ],
+         'urlManagerFrontend' => [
+             'class' => 'yii\web\urlManager',
+             'baseUrl' => '/../advanced/frontend/web/', //Access frontend web url
+             'enablePrettyUrl' => true,
+             'showScriptName' => false,
+         ],
         'user' => [
             'identityClass' => 'common\models\Admin',
             'enableAutoLogin' => true,

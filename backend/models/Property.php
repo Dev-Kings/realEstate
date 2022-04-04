@@ -34,7 +34,7 @@ class Property extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['property_title', 'property_description', 'picture'], 'required'],
+            [['property_title', 'property_description', 'property_price', 'picture'], 'required'],
             [['property_title'], 'string', 'max' => 100],
             [['admin_id'], 'integer'],
             [['property_description'], 'string', 'max' => 255],

@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'property_title',
             'property_description',
             'property_price',
+            //'admin_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
